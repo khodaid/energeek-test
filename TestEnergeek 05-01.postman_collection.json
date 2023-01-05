@@ -1,0 +1,118 @@
+{
+	"info": {
+		"_postman_id": "2fa8b7b1-c351-41c2-900c-c4bbeac4639c",
+		"name": "TestEnergeek 05/01",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20915904"
+	},
+	"item": [
+		{
+			"name": "Get All Candidate",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Add Candidate",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"job\" : \"1\",\r\n    \"name\" : \"khoda\",\r\n    \"email\" : \"asaaa@cdsc.com\",\r\n    \"phone\" : \"23232232\",\r\n    \"year\" : \"1212\",\r\n    \"skill_set\" : [\"1\",\"2\",\"3\"]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/candidate",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"candidate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "view create",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/candidate/create",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"candidate",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "validationEmail",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\" : \"dadaada\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/validation-email",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"validation-email"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
